@@ -68,6 +68,8 @@ RUN chmod +x ${HOME_DIR}/download_folia.sh && \
 # Set working directory
 WORKDIR ${HOME_DIR}
 
+RUN mkdir -p ${HOME_DIR}/config
+
 VOLUME ${HOME_DIR}
 
 # Changing ownership and user rights to support following use-cases:
